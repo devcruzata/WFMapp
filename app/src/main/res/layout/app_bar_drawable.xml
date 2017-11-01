@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.welcome.tempapp.DrawableActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#4682B4"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/global_toolbar"
+               android:layout_centerHorizontal="true"
+               android:layout_centerVertical="true"
+               android:layout_gravity="center"
+               android:layout_marginRight="4dp"
+               android:gravity="center|left"
+               android:text="Home"
+               android:paddingLeft="0dp"
+               android:textAllCaps="false"
+               android:textColor="#ffffff"
+               android:textSize="20sp"
+               android:visibility="visible"/>
+
+
+        </RelativeLayout>
+</android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_drawable" />
+
+
+</android.support.design.widget.CoordinatorLayout>
